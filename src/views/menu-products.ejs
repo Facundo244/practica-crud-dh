@@ -30,6 +30,9 @@
   
       <section class="menu-wrap">
 
+          <% products.forEach(function(plato){ %>
+
+
             <article>
               <div class="img-container">
                 <img src="/img/principal.jpg" alt="plato">
@@ -37,17 +40,17 @@
               <p>informacion del plato:</p>
               <ul>
                 <li>
-                    Nombre:   
+                    Nombre:  <%= plato.name %> 
                 </li>
                 <li>
-                    Descripcion: 
+                    Descripcion: <%= plato.description %> 
                 </li>
                 <li>
-                    Precio:  
+                    Precio:  <%= plato.price %> 
                 </li>
               </ul>
             </article>
-            
+            <% })  %>
       </section>
     </div>
     
